@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+img,
+svg,
+button {
+  cursor: pointer;
+}
+.container2 {
+  margin: 0 auto;
+  width: 95%;
+}
+@media (min-width: 1400px) {
+  .container2 {
+    width: 1350px;
+    margin: 0 auto;
+    
+  }
+}
+#form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  padding: 10px;
+  padding-top: 100px;
+}
+.form {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 10px !important;
+}
+@media (max-width: 768px) {
+  .form {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+  }
+}
+#form input {
+  width: 100% !important;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+#form button {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #006bff;
+  border-radius: 5px;
+  background-color: #006bff;
+  color: #fff;
+  font-weight: 600;
+  outline: none;
+}
+#form button:active {
+  background-color: #006bff;
+  color: #fff;
+  transform: scale(0.9);
+  border: 2px solid #006bff;
+  transition: 0.5s;
+}
+#form button:hover {
+  background-color: #fff;
+  color: #006bff;
+  transition: 0.5s;
+  border: 2px solid #006bff;
+}
